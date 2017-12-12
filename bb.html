@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var i=0;
+		function fn(){
+			i++;
+			if(i<10){
+			fn();
+			}else{
+			return i;
+			}		
+		}
+		var result=fn();
+		console.log(result);//undefined
+
+		var first={};
+		// var second={k:'second'};//先定义
+		// var third={k:'third'};
+		first[second]=100;
+		// first[third]=200;
+		alert(first);
+		// alert(second);
+		// alert(third);
+		console.dir(first);//object
+		// console.dir(second);//object
+		// console.log(first[second]);//200
+		// console.log(first[third]);//200
+	</script>	
+</body>
+</html>
